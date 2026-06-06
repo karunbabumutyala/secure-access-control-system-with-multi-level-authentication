@@ -14,7 +14,7 @@ It supports:
 * Fingerprint Verification
 * Fingerprint Deletion
 * Password Authentication
-* Admin/User Access Modes
+* User Access Modes
 * EEPROM Credential Storage
 * UART Interrupt Communication
 * Motorized Door Lock Control
@@ -28,14 +28,11 @@ To design and develop a secure embedded authentication system using fingerprint 
 ---
 
 # 🧱 Block Diagram
+<p align ="center">
+<img width="1536" height="1024" alt="ChatGPT Image Jun 6, 2026, 10_38_32 PM" src="https://github.com/user-attachments/assets/b0ccff8a-48a7-4f15-9554-afb3031a5d21" />
 
-(Add your block diagram image here)
+</p>
 
-```text
-Fingerprint Sensor  ---> LPC2148 ---> LCD
-Keypad              ---> LPC2148 ---> EEPROM
-L293D Motor Driver  ---> Door Lock Mechanism
-```
 
 ---
 
@@ -73,7 +70,6 @@ L293D Motor Driver  ---> Door Lock Mechanism
 | 4x4 Keypad | Password Input       |
 | L293D      | Motor Driver         |
 | DC Motor   | Door Lock Control    |
-| Buzzer     | Alert System         |
 
 ---
 
