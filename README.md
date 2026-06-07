@@ -59,17 +59,18 @@ To design and develop a secure embedded authentication system using fingerprint 
 
 ---
 
-# 🛠️ Hardware Requirements
+# ⚡ Circuit Connections
 
-| Component  | Description          |
-| ---------- | -------------------- |
-| LPC2148    | ARM7 Microcontroller |
-| R305       | Fingerprint Sensor   |
-| AT24C256   | EEPROM               |
-| 16x2 LCD   | Display Unit         |
-| 4x4 Keypad | Password Input       |
-| L293D      | Motor Driver         |
-| DC Motor   | Door Lock Control    |
+| Component                  | LPC2148 Interface   |
+| -------------------------- | ------------------- |
+| ⌨️ 4x4 Matrix Keypad       | GPIO Pins           |
+| 📟 LCD 16x2                | Data + Control Pins |
+| 👆 R305 Fingerprint Sensor | UART0 Interface     |
+| 💾 AT24C256 EEPROM         | I2C Interface       |
+| ⚙️ L293D Motor Driver      | GPIO Output Pins    |
+| 🔘 Switch                  | EINT0               |
+| 🔋 Power Supply            | 3.3V / 5V           |
+
 
 ---
 
@@ -81,41 +82,19 @@ To design and develop a secure embedded authentication system using fingerprint 
 
 ---
 
-# 📂 Repository Structure
-
-```text
-Secure-Access-Control-System/
-│
-├── main.c
-├── r305.c
-├── lcd.c
-├── uart.c
-├── i2c.c
-├── kpm.c
-├── delay.c
-│
-├── Drivers/
-│   ├── LCD
-│   ├── UART
-│   ├── EEPROM
-│   └── Fingerprint
-│
-├── Images/
-├── Documents/
-└── README.md
-```
-
----
 
 # ✨ Features Implemented
 
-✔ Multi-Level Authentication
-✔ Fingerprint Enrollment & Verification
-✔ EEPROM-Based Credential Storage
-✔ UART Interrupt-Driven Communication
-✔ Motorized Access Control
-✔ LCD User Interface with Animation
-✔ Retry & Timeout Handling
+* ✔ Multi-Level Authentication
+* ✔ Fingerprint Enrollment & Verification
+* ✔ EEPROM-Based Credential Storage
+* ✔ UART Interrupt-Driven Communication
+* ✔ Motorized Access Control
+* ✔ LCD User Interface with Animation
+* ✔ Retry & Timeout Handling
+* ✔ Password-Based User Authentication
+* ✔ Fingerprint Template Management
+* ✔ EEPROM User Data Management
 
 ---
 
@@ -131,9 +110,27 @@ Secure-Access-Control-System/
 
 ---
 
-# 📸 Project Output
+# 📸 Hardware Setup
 
-(Add hardware setup and LCD output images here)
+<img width="1766" height="891" alt="image" src="https://github.com/user-attachments/assets/9b31b2e6-f3c8-4036-8c8a-52b99c7714c8" />
+
+
+---
+
+# 📟 LCD Outputs
+
+## 🔓 Access Granted
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/b6a07240-440c-4c96-bfa7-b6cfb53c4ae9" />
+---
+
+## 🏠 Main Menu
+<img width="623" height="357" alt="WhatsApp Image 2026-06-06 at 11 47 18 AM_edited" src="https://github.com/user-attachments/assets/b8640385-ec87-476b-9d8b-81b353fc9860" />
+
+---
+
+## 👆 Edit Menu
+
+<img width="510" height="285" alt="WhatsApp Image 2026-06-06 at 11 46 06 AM_edited" src="https://github.com/user-attachments/assets/d9d0fc92-d963-439d-897c-b734672e53fd" />
 
 ---
 
@@ -141,3 +138,14 @@ Secure-Access-Control-System/
 
 Karun Babu Mutyala
 Embedded Systems Enthusiast
+# ⭐ GitHub Repository
+
+If you like this project, give it a ⭐ on GitHub.
+
+---
+
+<div align="center">
+
+## 💙 Thank You 💙
+
+</div>
